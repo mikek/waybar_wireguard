@@ -1,0 +1,24 @@
+[package]
+name = "waybar_wireguard"
+version = "0.1.0"
+edition = "2024"
+description = "A Waybar module that shows the state and stats of a WireGuard interface and lets you turn it on and off."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mikek/waybar_wireguard"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "waybar-wireguard"
+path = "src/main.rs"
+
+[dependencies]
+async-process = "2"
+serde = { version = "1", features = ["derive"] }
+serde_jsonc = "1"
+waybar-cffi = "0.1"
+wireguard-uapi = "3"
+
+[dev-dependencies]
+rstest = "0.23"
