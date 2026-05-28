@@ -22,7 +22,7 @@ TODO: Arch PKGBUILD (the `setcap` step needs to move to a `.install` post-instal
 If there is no package for your distribution (and most likely there isn't one), you'll have to build it. This assumes you have a working Rust toolchain (at least `cargo` & `rustc`).
 
 ```sh
-git clone https://github.com/mikek/waybar_wireguard   # not public yet
+git clone https://github.com/mikek/waybar_wireguard
 cd waybar_wireguard
 cargo build --release
 sudo setcap CAP_NET_ADMIN=+eip ./target/release/waybar-wireguard
