@@ -3,6 +3,9 @@
 A [Waybar][1] CFFI module (built on [`waybar-cffi`][2]) that shows the state and stats
 of a [WireGuard][3] interface and lets you turn it on and off.
 
+See in action:
+<video src="https://github.com/user-attachments/assets/398c5fcd-9d91-4fa6-b870-e8f49cf64955" autoplay muted loop></video>
+
 Features:
 
 - Doesn't depend on a network manager — just the standard WireGuard tools and kernel interface.
