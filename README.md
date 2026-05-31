@@ -18,7 +18,15 @@ Features:
 ## Installation
 
 ### On Arch Linux
-TODO: Arch PKGBUILD (the `setcap` step needs to move to a `.install` post-install hook so the capability survives packaging).
+
+Available on the [AUR][7] as [`waybar-wireguard`][7]:
+
+```sh
+paru -S waybar-wireguard      # or: yay -S waybar-wireguard
+```
+
+`CAP_NET_ADMIN` is granted to the helper automatically via the package's
+post-install hook.
 
 ### Manually
 
@@ -233,3 +241,4 @@ back to the default format (`"{}"`), so users can keep writing
 [4]: https://lucide.dev
 [5]: https://simpleicons.org/?q=wireguard
 [6]: https://www.wireguard.com/trademark-policy/
+[7]: https://aur.archlinux.org/packages/waybar-wireguard

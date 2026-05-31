@@ -1,2 +1,8 @@
-target/
-.claude/
+/target/
+/.claude/
+/demo/
+/packaging/arch/pkg/
+/packaging/arch/src/
+/packaging/arch/*.log
+/packaging/arch/*.tar.zst
+/packaging/arch/*.tar.gz
